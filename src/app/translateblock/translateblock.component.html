@@ -1,0 +1,105 @@
+<div id="translate-block-container">
+        <div id="first-line">
+            <div id="search-section">
+                <form class="translate-block-header">
+                <img src="./assets/icons/card-search.png" alt="" />
+                <img id="vector" src="./assets/icons/Vector-8.png" alt="" />
+                <input type="search" matInput />
+                </form>
+            </div>
+
+            <div id="top-icons">
+                <img src="./assets/icons/new-box.png" alt="" />
+                <p>6</p>
+                <img src="./assets/icons/hexagon-slice-4.png" alt="" />
+                <p>300</p>
+                <img src="./assets/icons/hexagon-slice-6.png" alt="" />
+                <p>300</p>
+                <img class="left-right" src="./assets/icons/FromLeftToRight.png" alt="" />
+
+            </div>
+        </div>
+
+        <div id="second-line">
+            <div id="id-field">
+                <img src="./assets/icons/1.png" alt="" />
+                <input type="text" matInput placeholder="ID" />
+            </div>
+
+            <div class="source-destination">
+                <img src="./assets/icons/1.png" alt="" />
+                <p>Source:</p>
+                <form class="translate-block-header">
+                <mat-select>
+                    <mat-option value="English (INT)"
+                        ><img class="flag" src="./assets/icons/INT-Flag.png" alt="" />English (INT)</mat-option
+                    >
+                    <mat-option value="English (UK)"
+                        ><img class="flag" src="./assets/icons/UK-Flag.png" alt="" />English (UK)</mat-option
+                    >
+                    <mat-option value="English (USA)"
+                        ><img class="flag" src="./assets/icons/USA-Flag.png" alt="" />English (USA)</mat-option
+                    >
+                    <mat-option value="Magyar"
+                        ><img class="flag" src="./assets/icons/HUNGARIAN-Flag.png" alt="" />Magyar</mat-option
+                    >
+                    <mat-option value="Deutsche"
+                        ><img class="flag" src="./assets/icons/GERMAN-Flag.png" alt="" />Deutsche</mat-option
+                    >
+                    <mat-option value="Pусский"
+                        ><img class="flag" src="./assets/icons/RUSSAN-Flag.png" alt="" />Pусский</mat-option
+                    >
+                    <mat-option value="中文"
+                        ><img class="flag" src="./assets/icons/CHINA-Flag.png" alt="" />中文</mat-option
+                    >
+                </mat-select>
+            </form>
+            </div>
+
+            <div class="source-destination">
+                <img src="./assets/icons/1.png" alt="" />
+                <p>Destination:</p>
+                <form class="translate-block-header">
+                <mat-select>
+                    <mat-option value="English (INT)"
+                        ><img class="flag" src="./assets/icons/INT-Flag.png" alt="" />English (INT)</mat-option
+                    >
+                    <mat-option value="English (UK)"
+                        ><img class="flag" src="./assets/icons/UK-Flag.png" alt="" />English (UK)</mat-option
+                    >
+                    <mat-option value="English (USA)"
+                        ><img class="flag" src="./assets/icons/USA-Flag.png" alt="" />English (USA)</mat-option
+                    >
+                    <mat-option value="Magyar"
+                        ><img class="flag" src="./assets/icons/HUNGARIAN-Flag.png" alt="" />Magyar</mat-option
+                    >
+                    <mat-option value="Deutsche"
+                        ><img class="flag" src="./assets/icons/GERMAN-Flag.png" alt="" />Deutsche</mat-option
+                    >
+                    <mat-option value="Pусский"
+                        ><img class="flag" src="./assets/icons/RUSSAN-Flag.png" alt="" />Pусский</mat-option
+                    >
+                    <mat-option value="中文"
+                        ><img class="flag" src="./assets/icons/CHINA-Flag.png" alt="" />中文</mat-option
+                    >
+                </mat-select>
+            </form>
+            </div>
+        </div>
+
+    <div id="translate-block-body">
+        <div id="result" *ngFor="let proba of tests">
+            <div class="id-result">
+                <p>{{proba.id}}</p>
+            </div>
+            <div class="source-result">
+                <input [disabled]=!write value="{{ proba.source }}" type="text" placeholder="write here" />
+                <img (click)="writeInput()" src="./assets/icons/pencil.png" alt="" />
+            </div>
+            <div class="destination-result">
+                <input [disabled]=!write value="{{ proba.destination }}" type="text" placeholder="write here" />
+                <img (click)="writeInput()" src="./assets/icons/pencil.png" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
