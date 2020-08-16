@@ -62,6 +62,8 @@ export class TranslateBlockComponent {
     ];
 
     write = false;
+    leftRightBtn = '';
+    imgPath = './assets/icons/FromLeftToRight.png';
 
     writeInput(): boolean {
         if (this.write === false) {
@@ -69,6 +71,18 @@ export class TranslateBlockComponent {
         } else {
             return this.write = false;
         }
+    }
+
+    leftRight(): string {
+
+        if (this.imgPath === './assets/icons/FromLeftToRight.png') {
+            this.leftRightBtn = 'valami';
+            return this.imgPath = './assets/icons/FromRightToLeft.png';
+        } else {
+            this.leftRightBtn = '';
+            return this.imgPath = './assets/icons/FromLeftToRight.png';
+        }
+
     }
 }
 

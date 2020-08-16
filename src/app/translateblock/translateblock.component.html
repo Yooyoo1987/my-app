@@ -1,4 +1,4 @@
-<div id="translate-block-container">
+<div [ngClass]="leftRightBtn" id="translate-block-container">
         <div id="first-line">
             <div id="search-section">
                 <form class="translate-block-header">
@@ -15,7 +15,7 @@
                 <p>300</p>
                 <img src="./assets/icons/hexagon-slice-6.png" alt="" />
                 <p>300</p>
-                <img class="left-right" src="./assets/icons/FromLeftToRight.png" alt="" />
+                <img (click)="leftRight()" class="left-right" src={{imgPath}} alt="" />
 
             </div>
         </div>
