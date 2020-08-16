@@ -1,4 +1,4 @@
-import { Component, TestabilityRegistry } from '@angular/core';
+import { Component } from '@angular/core';
 import { Proba } from './proba.model';
 
 
