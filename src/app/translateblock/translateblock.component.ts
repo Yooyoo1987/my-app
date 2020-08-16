@@ -9,7 +9,6 @@ import { Proba } from './proba.model';
 })
 
 
-
 export class TranslateBlockComponent {
 
     tests: Proba[] = [
