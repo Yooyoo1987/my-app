@@ -8,75 +8,55 @@ import { Proba } from './proba.model';
     styleUrls: ['./translateblock.component.scss']
 })
 
+
+
 export class TranslateBlockComponent {
 
     tests: Proba[] = [
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
-        new Proba(1, 'angol', 'english'),
-        new Proba(2, 'magyar', 'hungarian'),
-        new Proba(3, 'német', 'german'),
-        new Proba(4, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, sequi.'),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, '', 'english', false, false),
+        new Proba(1, 'angol', '', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, '', 'english', false, false),
+        new Proba(1, 'angol', '', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, '', 'english', false, false),
+        new Proba(1, 'angol', '', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, '', 'english', false, false),
+        new Proba(1, 'angol', '', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+        new Proba(1, 'angol', 'english', false, false),
+
     ];
 
-    write = false;
-    leftRightBtn = '';
-    imgPath = './assets/icons/FromLeftToRight.png';
 
-    writeInput(): boolean {
-        if (this.write === false) {
-            return this.write = true;
-        } else {
-            return this.write = false;
-        }
-    }
+    leftRightBtn = '';
+    writehere = '';
+    imgPath = './assets/icons/FromLeftToRight.png';
 
     leftRight(): string {
 
         if (this.imgPath === './assets/icons/FromLeftToRight.png') {
-            this.leftRightBtn = 'valami';
+            this.leftRightBtn = 'left-right';
             return this.imgPath = './assets/icons/FromRightToLeft.png';
         } else {
             this.leftRightBtn = '';

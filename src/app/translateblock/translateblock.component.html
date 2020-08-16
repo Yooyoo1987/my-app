@@ -88,17 +88,19 @@
         </div>
 
     <div id="translate-block-body">
-        <div id="result" *ngFor="let proba of tests">
+        <div id="result" *ngFor="let proba of tests; index as i;">
             <div class="id-result">
                 <p>{{proba.id}}</p>
             </div>
+
             <div class="source-result">
-                <input [disabled]=!write value="{{ proba.source }}" type="text" placeholder="write here" />
-                <img (click)="writeInput()" src="./assets/icons/pencil.png" alt="" />
+                    <input [disabled]="!proba.writeS" value="{{ proba.source }}" type="text" placeholder="write here" />
+                    <img (click)="proba.writeS === true ? proba.writeS = false : proba.writeS = true" src="./assets/icons/pencil.png" alt="" />
+
             </div>
             <div class="destination-result">
-                <input [disabled]=!write value="{{ proba.destination }}" type="text" placeholder="write here" />
-                <img (click)="writeInput()" src="./assets/icons/pencil.png" alt="" />
+                <input [ngClass]="writehere" [disabled]=!proba.writeD value="{{ proba.destination }}" type="text" placeholder="write here" />
+                    <img (click)="proba.writeD === true ? proba.writeD = false : proba.writeD = true" src="./assets/icons/pencil.png" alt="" />
             </div>
         </div>
     </div>
